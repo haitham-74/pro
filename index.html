@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Haitham Ismail - AI Engineer | Machine Learning & Computer Vision Engineer">
+  <title>Haitham Ismail | AI Engineer</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Progress Bar (scroll indicator) -->
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">H.I.A</a>
+      
+      <!-- Desktop Navigation -->
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+          <i class="fas fa-moon theme-icon"></i>
+        </button>
+        <a href="Haitham_CV.pdf" class="nav-cv-btn" id="cvDownload" aria-label="Download CV" title="Download CV" download>
+          <i class="fas fa-download"></i>
+        </a>
+        
+        <!-- Hamburger Menu (Mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+      <div class="floating-shape shape-1"></div>
+      <div class="floating-shape shape-2"></div>
+      <div class="floating-shape shape-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-name reveal">Haitham Ismail Abdelrahman Ismail</h1>
+        <p class="hero-title reveal">AI Engineer | Machine Learning & Computer Vision Engineer</p>
+        <p class="hero-subtitle reveal">
+          <span class="typed-text" id="typedText"></span>
+          <span class="cursor">|</span>
+        </p>
+
+        <div class="hero-buttons reveal">
+          <a href="Haitham_CV.pdf" class="btn btn-icon" id="heroCvDownload" aria-label="Download CV" download>
+          <i class="fas fa-download"></i>
+        </a>
+        <a href="#contact" class="btn btn-icon" aria-label="Contact">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/haitham-ismail-866056307" target="_blank" rel="noopener noreferrer" class="btn btn-icon" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        </div>
+      </div>
+
+      <div class="profile-wrapper profile-entrance">
+        <div class="profile-image profile-shape">
+          <img src="my.jpeg" alt="Haitham Ismail - AI Engineer" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT SECTION ==================== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-content">
+        <p class="about-text reveal">
+          AI Engineer and 2025 Artificial Intelligence graduate specialized in Machine Learning, Deep Learning, Computer Vision, NLP, and Data Analytics. Focused on building real-world AI solutions.
+        </p>
+        <div class="about-cards">
+          <div class="about-card reveal">
+            <i class="fas fa-robot"></i>
+            <h3>AI Engineer</h3>
+          </div>
+          <div class="about-card reveal">
+            <i class="fas fa-brain"></i>
+            <h3>ML Specialist</h3>
+          </div>
+          <div class="about-card reveal">
+            <i class="fas fa-eye"></i>
+            <h3>Computer Vision Developer</h3>
+          </div>
+          <div class="about-card reveal">
+            <i class="fas fa-chart-line"></i>
+            <h3>Data Analytics</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS SECTION ==================== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title reveal">Skills</h2>
+      <div class="skills-grid">
+        
+        <!-- AI & ML -->
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-brain"></i> AI & ML</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">Machine Learning</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Deep Learning</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Computer Vision</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="92"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">NLP</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Scikit-learn</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="93"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">XGBoost</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Programming -->
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-code"></i> Programming</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">C++</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Java</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Dart</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">SQL</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data & Tools -->
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-database"></i> Data & Tools</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">NumPy</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="92"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Pandas</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">OpenCV</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">NetworkX</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Streamlit</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other -->
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-tools"></i> Other</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">Arduino</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Embedded Systems</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Flutter</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="72"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Photoshop</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Video Editing</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Microsoft Office</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EDUCATION SECTION ==================== -->
+  <section id="education" class="section education">
+    <div class="container">
+      <h2 class="section-title reveal">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Egyptian Russian University</h3>
+            <p class="timeline-degree">Bachelor of Science in Artificial Intelligence</p>
+            <p class="timeline-date">Graduation: July 2025</p>
+            <div class="timeline-project">
+              <h4>Graduation Project:</h4>
+              <p>AI-Based Assistive Navigation for the Visually Impaired</p>
+              <div class="tech-badges">
+                <span>YOLOv5</span>
+                <span>OpenCV</span>
+                <span>Raspberry Pi</span>
+                <span>Text-to-Speech</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE SECTION ==================== -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <h2 class="section-title reveal">Experience & Training</h2>
+      <div class="exp-timeline">
+        <div class="exp-card reveal">
+          <div class="exp-icon"><i class="fas fa-building"></i></div>
+          <div class="exp-content">
+            <h3>Huawei Academy</h3>
+            <p class="exp-role">Python Programming Trainee</p>
+            <p class="exp-year">2022</p>
+          </div>
+        </div>
+        <div class="exp-card reveal">
+          <div class="exp-icon"><i class="fas fa-laptop-code"></i></div>
+          <div class="exp-content">
+            <h3>ITI</h3>
+            <p class="exp-role">Backend & .NET Training</p>
+            <p class="exp-year">2022</p>
+          </div>
+        </div>
+        <div class="exp-card reveal">
+          <div class="exp-icon"><i class="fas fa-lightbulb"></i></div>
+          <div class="exp-content">
+            <h3>IBM SkillsBuild</h3>
+            <p class="exp-role">AI & Design Thinking</p>
+            <p class="exp-year">2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS SECTION ==================== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title reveal">Projects</h2>
+      <div class="projects-grid">
+        
+        <article class="project-card reveal">
+          <div class="project-header">
+            <i class="fas fa-heartbeat"></i>
+            <h3>Heart Disease Classification Model</h3>
+          </div>
+          <p>ML model to classify heart disease risk using patient data with high accuracy.</p>
+          <div class="tech-badges">
+            <span>Python</span>
+            <span>Scikit-learn</span>
+            <span>Pandas</span>
+          </div>
+          <a href="#" class="project-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-header">
+            <i class="fas fa-newspaper"></i>
+            <h3>Fake News Detection (NLP)</h3>
+          </div>
+          <p>NLP-based system to detect and classify fake news articles using text analysis.</p>
+          <div class="tech-badges">
+            <span>NLP</span>
+            <span>Python</span>
+            <span>TF-IDF</span>
+          </div>
+          <a href="#" class="project-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-header">
+            <i class="fas fa-car"></i>
+            <h3>Driver Drowsiness Detection</h3>
+          </div>
+          <p>Real-time computer vision system to detect drowsiness and alert drivers.</p>
+          <div class="tech-badges">
+            <span>OpenCV</span>
+            <span>DLib</span>
+            <span>Python</span>
+          </div>
+          <a href="#" class="project-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-header">
+            <i class="fas fa-user-check"></i>
+            <h3>Face Recognition with Speech Output</h3>
+          </div>
+          <p>Face recognition system that announces identified persons via text-to-speech.</p>
+          <div class="tech-badges">
+            <span>OpenCV</span>
+            <span>TTS</span>
+            <span>Python</span>
+          </div>
+          <a href="#" class="project-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-header">
+            <i class="fas fa-id-card"></i>
+            <h3>AI Face Recognition Attendance System</h3>
+          </div>
+          <p>Automated attendance system using face recognition for classrooms or offices.</p>
+          <div class="tech-badges">
+            <span>Face Recognition</span>
+            <span>Python</span>
+            <span>OpenCV</span>
+          </div>
+          <a href="#" class="project-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-header">
+            <i class="fas fa-project-diagram"></i>
+            <h3>Graph Coloring & Pathfinding Visualization</h3>
+          </div>
+          <p>Interactive visualization of graph algorithms for coloring and pathfinding.</p>
+          <div class="tech-badges">
+            <span>NetworkX</span>
+            <span>Python</span>
+            <span>Streamlit</span>
+          </div>
+          <a href="#" class="project-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+        </article>
+
+        <article class="project-card reveal project-featured">
+          <div class="project-header">
+            <i class="fas fa-blind"></i>
+            <h3>AI Navigation for Visually Impaired</h3>
+          </div>
+          <p>Graduation project: Assistive navigation system using object detection and TTS for the visually impaired.</p>
+          <div class="tech-badges">
+            <span>YOLOv5</span>
+            <span>OpenCV</span>
+            <span>Raspberry Pi</span>
+            <span>TTS</span>
+          </div>
+          <a href="#" class="project-link" aria-label="View on GitHub"><i class="fab fa-github"></i></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CERTIFICATES SECTION ==================== -->
+  <section id="certificates" class="section certificates">
+    <div class="container">
+      <h2 class="section-title reveal">Certificates</h2>
+      <div class="certificates-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+          <h3>Huawei Python Certificate</h3>
+          <p class="cert-org">Huawei Academy</p>
+          <a href="huawei.pdf" class="cert-link" target="_blank" rel="noopener noreferrer" aria-label="View certificate">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+          <h3>ITI Certificate</h3>
+          <p class="cert-org">Information Technology Institute</p>
+          <a href="iti.jpeg" class="cert-link" target="_blank" rel="noopener noreferrer" aria-label="Open certificate">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+          <h3>IBM AI Certificate</h3>
+          <p class="cert-org">IBM SkillsBuild</p>
+          <a href="IBM.pdf" class="cert-link" target="_blank" rel="noopener noreferrer" aria-label="Open certificate">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title reveal">Contact</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:haithamkhlaila93@gmail.com">haithamkhlaila93@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+201060183560">+20 106 018 3560</a>
+          </div>
+        
+          <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/201060183560" target="_blank">
+               whatsapp
+            </a>
+          </div>
+
+
+
+          <div class="contact-item">
+            <i class="fas fa-location-dot"></i>
+            <span>Alsharqiya, Egypt</span>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin-in"></i>
+            <a href="https://linkedin.com/in/haitham-ismail-866056307" target="_blank" rel="noopener noreferrer">linkedin.com/in/haitham-ismail-866056307</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-submit btn-icon-submit" aria-label="Send message">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <p>&copy; 2025 Haitham Ismail. All rights reserved.</p>
+  </footer>
+
+  <!-- ==================== BACK TO TOP ==================== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
