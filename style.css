@@ -337,12 +337,66 @@ body.light-mode .navbar {
   gap: 48px;
   max-width: 1200px;
   width: 100%;
+  flex-wrap: wrap; /* يجعل العناصر تنزل على الشاشات الصغيرة */
 }
 
 .hero-text {
   flex: 1;
   text-align: left;
 }
+
+/* ==================== HERO BUTTONS ==================== */
+.hero-buttons {
+  display: flex;
+  justify-content: flex-start; /* الأزرار تبدأ من اليسار */
+  align-items: center;
+  gap: 20px; /* المسافة بين الأزرار */
+  flex-wrap: wrap; /* responsive */
+  margin-top: 20px;
+}
+
+/* Text buttons for Download CV and Connect Me */
+.btn-text {
+  padding: 12px 28px;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #0E21A0, #4D2FB2); /* اللون الأساسي */
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn-text:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* أي icon button إضافي اتشال لأننا بنستخدم نصوص فقط */
+/* .btn-icon تم إزالة أي استخدام لها هنا */
+
+/* Reveal animation for hero text and buttons */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.hero-name.reveal { animation-delay: 0.6s; }
+.hero-title.reveal { animation-delay: 0.8s; }
+.hero-subtitle.reveal { animation-delay: 1s; }
+.hero-buttons.reveal { animation-delay: 1.2s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* Profile on right - stylish shape with entrance animation */
 .profile-wrapper {
@@ -754,8 +808,9 @@ body.light-mode .navbar {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
+  padding: 0 12px;
 }
 
 .exp-card {
@@ -770,9 +825,9 @@ body.light-mode .navbar {
 }
 
 .exp-card:hover {
-  transform: translateX(12px);
+  transform: translateY(-8px);
   border-color: var(--color-3);
-  box-shadow: 0 12px 40px var(--shadow-color);
+  box-shadow: 0 16px 48px var(--shadow-color);
 }
 
 .exp-icon {
@@ -786,6 +841,11 @@ body.light-mode .navbar {
   justify-content: center;
   font-size: 1.5rem;
   color: white;
+  flex-shrink: 0;
+}
+
+.exp-content {
+  flex: 1;
 }
 
 .exp-content h3 {
@@ -802,6 +862,26 @@ body.light-mode .navbar {
 .exp-year {
   color: var(--text-muted);
   font-size: 0.95rem;
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+@media (max-width: 992px) {
+  .exp-card {
+    gap: 16px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .exp-card {
+    flex-direction: column; /* icon فوق النص */
+    align-items: center;
+    text-align: center;
+  }
+
+  .exp-icon {
+    margin-bottom: 12px;
+  }
 }
 
 /* ==================== PROJECTS SECTION ==================== */
@@ -994,6 +1074,40 @@ body.light-mode .navbar {
   color: var(--color-4);
 }
 
+/* Email link as full clickable row (mailto) */
+.contact-item-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  gap: 16px;
+}
+
+.contact-item-link:hover {
+  border-color: var(--color-3);
+}
+
+.contact-item-link:focus-visible {
+  outline: 2px solid var(--color-4);
+  outline-offset: 2px;
+}
+
+.contact-item-link i {
+  flex-shrink: 0;
+}
+
+.contact-item-link span {
+  flex: 1;
+  min-width: 0;
+  word-break: break-word;
+}
+
+.contact-item-link:hover span,
+.contact-item-link:focus span {
+  color: var(--color-4);
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -1149,6 +1263,17 @@ body.light-mode .navbar {
 
   .contact-wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .contact-item,
+  .contact-item-link {
+    width: 100%;
+    min-width: 0;
   }
 }
 
